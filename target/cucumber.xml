@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="30.23" tests="3" skipped="0" failures="2" errors="0">
+<testcase classname="Add To Cart" name="Verify user be able add to cart product" time="10.977">
+<failure/>
+<system-out><![CDATA[
+Given User open the web.....................................................passed
+When user input username....................................................undefined
+And user input password.....................................................skipped
+And user click button login.................................................skipped
+And user choose product.....................................................skipped
+And user click button add to cart...........................................skipped
+And user click icon cart....................................................skipped
+Then user redirect to page cart with list product...........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Checkout" name="Verify user be able to checkout" time="11.468">
+<system-out><![CDATA[
+Given User open the web.....................................................passed
+When user input username "standard_user"....................................passed
+And user input password "secret_sauce"......................................passed
+And user click button login.................................................passed
+And user choose product.....................................................passed
+And user click button add to cart...........................................passed
+And user click icon cart....................................................passed
+And user click button checkout..............................................passed
+And user input firstname....................................................passed
+And user input lastname.....................................................passed
+And user input zipcode......................................................passed
+And user click button continue..............................................passed
+And user click button finish................................................passed
+Then user redirect to page checkout complete................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Verify user able to login with valid username and password" time="7.458">
+<failure/>
+<system-out><![CDATA[
+Given User open the web.....................................................passed
+When user input username....................................................undefined
+And user input password.....................................................skipped
+And user click button login.................................................skipped
+Then User redirect to page product list.....................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
